@@ -778,7 +778,7 @@ download:"https://github.com/Speedtige/AUDIOCONVERT-WEB---CONVERTIDOR-MP4-A-MP3"
 demo:"https://speedtige.github.io/AUDIOCONVERT-WEB---CONVERTIDOR-MP4-A-MP3/"
 },
 {
-title:"MusicFlow",
+title:"Lector de PDFs 2026",
 image:"images/web/imgeW2.png",
 desc:"Cargar y visualizar archivos PDF directamente desde el navegador.\
 Navegar entre las páginas del documento.\
