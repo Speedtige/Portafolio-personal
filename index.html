@@ -1,0 +1,283 @@
+
+<!--
+======================================================================
+Autor: Cristian M. Veliz Cano
+Proyecto: Developer Portfolio
+Versión: Web v1.0
+Año: 2026
+
+Descripción:
+Portafolio personal de desarrollo de software diseñado para
+presentar proyectos, aplicaciones de escritorio, herramientas
+Python y desarrollos web.
+
+El sitio funciona como una vitrina profesional donde se muestran
+diferentes proyectos organizados por categoría y con acceso a
+demostraciones, descargas y repositorios públicos cuando están
+disponibles.
+
+======================================================================
+
+SECCIONES DEL PORTAFOLIO
+----------------------------------------------------------------------
+
+✔ Python Projects
+Aplicaciones desarrolladas en Python utilizando diferentes
+frameworks como Tkinter, PyQt y otras herramientas de desarrollo.
+
+✔ Desktop Applications
+Aplicaciones de escritorio orientadas a utilidades, herramientas
+OSINT y software experimental desarrollado como proyectos personales.
+
+✔ Web Projects
+Proyectos desarrollados con tecnologías web modernas y publicados
+como demostraciones interactivas.
+
+✔ About
+Información del desarrollador, contacto y presentación personal.
+
+======================================================================
+
+FUNCIONALIDADES DEL SITIO
+----------------------------------------------------------------------
+
+✔ Navegación por pestañas (Tabs)
+✔ Tarjetas dinámicas de proyectos
+✔ Vista previa ampliada de imágenes
+✔ Modal de demostración integrado
+✔ Ventana demo estilo navegador
+✔ Descarga directa de aplicaciones
+✔ Aviso modal para proyectos con código privado
+✔ Fondo dinámico según sección
+✔ Diseño moderno orientado a portafolio profesional
+✔ Compatible con navegadores modernos
+
+======================================================================
+
+TIPOS DE PROYECTOS MOSTRADOS
+----------------------------------------------------------------------
+
+✔ Herramientas Python
+✔ Aplicaciones de escritorio
+✔ Interfaces gráficas
+✔ Herramientas OSINT
+✔ Proyectos experimentales
+✔ Interfaces web interactivas
+
+======================================================================
+
+TECNOLOGÍAS UTILIZADAS
+----------------------------------------------------------------------
+
+HTML5
+CSS3
+JavaScript (ES6)
+
+======================================================================
+
+NOTA SOBRE CÓDIGO FUENTE
+----------------------------------------------------------------------
+
+Algunos proyectos incluidos en este portafolio no publican su código
+fuente por decisión del autor, ya sea por motivos de desarrollo
+experimental, propiedad intelectual o seguridad.
+
+Sin embargo, pueden mostrarse demostraciones funcionales o versiones
+descargables para evaluación.
+
+======================================================================
+
+Licencia:
+Uso personal y demostrativo.
+
+---------------------------------------------------------------
+
+Secciones
+
+Proyectos de Python
+Aplicaciones de escritorio
+Proyectos Web
+Acerca de
+
+======================================================================
+
+Notas
+
+Es posible que algunos proyectos no incluyan código fuente público debido a
+experimentación de desarrollo, propiedad intelectual o
+consideraciones de seguridad.
+
+---------------------------------------------------------------
+© 2026
+======================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1 class="logo">My Developer Portfolio</h1>
+
+    <nav class="nav">
+        <button class="tab active" data-tab="python">Python</button>
+        <button class="tab" data-tab="desktop">Desktop Apps</button>
+        <button class="tab" data-tab="web">Web Projects</button>
+        <button class="tab" data-tab="about">About</button>
+    </nav>
+</header>
+
+<main>
+
+<section class="tab-content active" id="python">
+<h2>Python Projects</h2>
+<div class="project-grid" id="pythonProjects"></div>
+</section>
+
+<section class="tab-content" id="desktop">
+<h2>Desktop Applications</h2>
+<div class="project-grid" id="desktopProjects"></div>
+</section>
+
+<section class="tab-content" id="web">
+<h2>Web Projects</h2>
+<div class="project-grid" id="webProjects"></div>
+</section>
+
+<section class="tab-content" id="about">
+<h2>About Me</h2>
+<div class="about-container">
+
+<div class="about-photo">
+
+<img src="images/fp/foto_perfil.jpg" alt="Cristian Veliz" onclick="openImage('images/fp/foto_perfil.jpg')">
+
+<img src="images/qr/qr_datos.png" alt="QR Contacto" class="qr" onclick="openImage('images/qr/qr_datos.png')">
+
+<img src="images/logo/logo.png" alt="Logo Empresa" class="logo" onclick="openImage('images/logo/logo.png')">
+
+</div>
+
+<div class="about-text">
+
+<h3>Cristian M. Veliz Cano</h3>
+
+<p>
+Profesional autodidacta en el área de <b>informática, sistemas y desarrollo de software</b>, con amplia experiencia en soporte técnico, mantenimiento de equipos, redes informáticas y desarrollo de aplicaciones personalizadas.  
+Actualmente enfocado en el <b>desarrollo de software para escritorio, aplicaciones web y proyectos personales</b> utilizando tecnologías como <b>Python, PyQt, PySide y herramientas web modernas</b>.
+</p>
+
+<p>
+He trabajado en el área informática dentro de instituciones municipales, desempeñando funciones como <b>informático general, soporte técnico, mantenimiento de equipos y digitalización de información</b>.  
+También he desarrollado soluciones informáticas personalizadas basadas en bases de datos y formularios adaptados a necesidades específicas.
+</p>
+
+<p>
+Entre mis habilidades se encuentran la <b>creación y mantenimiento de redes informáticas (568A / 568B), reparación de hardware y software, recuperación de información, desarrollo de aplicaciones, y soporte técnico</b>.  
+Además cuento con experiencia en atención al cliente, administración básica de negocios y diversas áreas técnicas complementarias.
+</p>
+
+<p>
+Mi objetivo es seguir desarrollando soluciones tecnológicas útiles y eficientes, creando aplicaciones que faciliten procesos administrativos, comerciales y personales.
+</p>
+
+<p class="about-contact">
+📍 Mazatenango, Suchitepéquez, Guatemala<br>
+📱 WhatsApp / Tel: +502 4833-7746<br>
+📧 Email: cristianvel2015mvc@gmail.com
+</p>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 My Portfolio || 📧 Email: cristianvel2015mvc@gmail.com</p>
+</footer>
+
+<div id="demoModal" class="demo-modal">
+
+<div class="demo-window">
+
+<div class="demo-bar">
+
+<div class="demo-dots">
+<span class="dot red"></span>
+<span class="dot yellow"></span>
+<span class="dot green"></span>
+</div>
+
+<div class="demo-url" id="demoURL">
+https://demo-site.com
+</div>
+
+<button class="demo-close" onclick="closeDemo()">✕</button>
+
+</div>
+
+<iframe id="demoFrame"></iframe>
+
+</div>
+
+</div>
+
+<div id="imageModal" class="image-modal">
+<span class="image-close" onclick="closeImage()">✖</span>
+
+<img id="previewImage" alt="Project preview">
+
+</div>
+
+<script src="script.js"></script>
+
+<div id="noticeModal" class="notice-modal">
+
+<div class="notice-content">
+
+<span class="notice-close" onclick="closeNotice()">✖</span>
+
+<h2>⚠ Aviso sobre Código Fuente</h2>
+
+<p>
+Actualmente, el código fuente de algunas aplicaciones presentadas en este portafolio
+<strong>no se encuentra publicado en GitHub ni en otros repositorios públicos</strong>.
+</p>
+
+<p>
+Algunas herramientas fueron desarrolladas como proyectos personales o soluciones
+especializadas, por lo que el código se mantiene como <b>software propietario</b>.
+</p>
+
+<p>
+Sin embargo, muchas de estas aplicaciones pueden descargarse en formato
+<strong>instalable o portable</strong> para demostración y uso personal.
+</p>
+
+<p>
+Ejemplo de ello es <b>Faro OSINT</b>, una herramienta de investigación OSINT
+con integración local de Sherlock y módulos de scraping desarrollados
+de forma independiente.
+</p>
+
+<p>
+Gracias por su comprensión.
+</p>
+
+</div>
+</div>
+
+<!-- Modal para información detallada de proyectos -->
+<div id="projectInfoModal" class="project-info-modal"></div>
+
+</body>
+</html>
